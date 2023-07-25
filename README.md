@@ -1,3 +1,5 @@
+This is copied from original repo https://github.com/ying-jeanne/dependabot_autoapproval
+
 # Dependabot Autoapproval
 
 This repository contains a GitHub Action that automatically approves pull requests raised by Dependabot, depending on whether the library is contained in a whitelist. It also allows you to provide a reason for whitelisting a library and add comments to the pull requests.
