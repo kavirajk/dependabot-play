@@ -1,4 +1,4 @@
-module github.com/ying-jeanne/dependabot_autoapproval
+module github.com/kavirajk/dependabot-play
 
 go 1.20
 
