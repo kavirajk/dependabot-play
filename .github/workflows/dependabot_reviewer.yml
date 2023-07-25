@@ -29,7 +29,7 @@ jobs:
           gh pr merge --auto --squash "$PR_URL"
           gh pr review $PR_URL \
           --approve -b "**I'm approving** this pull request because it includes a patch or minor \
-          update to dependencies that doesn't need any manual check
+          update to dependencies that doesn't need any manual check"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
