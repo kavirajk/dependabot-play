@@ -13,22 +13,8 @@ When using Dependabot to manage your project's dependencies, it can be helpful t
 To use the Dependabot Autoapproval GitHub Action in your repository, follow these steps:
 
 1. Create a `.github/workflows/autoapproval.yml` file in your repository with the [Content](https://github.com/ying-jeanne/dependabot_autoapproval/blob/main/.github/workflows/dependabot_reviewer.yml)
-2. Configure the whitelist in the .github/workflows/whitelist.json file. Specify the libraries that should be auto-approved, along with optional reasons for whitelisting. For example:
-```json
-  [
-    {
-      "name": "github.com/gin-gonic/gin",
-      "reason": "The library is only used in test"
-    },
-    {
-      "name": "github.com/google/uuid",
-      "reason": "The library is stable"
-    }
-  ]
-```
-Customize the library names, reasons to your project's requirements.
 
-Commit and push the changes to your repository. The Dependabot Autoapproval GitHub Action will be triggered when a pull request is opened by Dependabot, automatically approving it if the library is present in the whitelist.
+Commit and push the changes to your repository. The Dependabot Autoapproval GitHub Action will be triggered when a pull request is opened by Dependabot, automatically approving it and merging it
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
