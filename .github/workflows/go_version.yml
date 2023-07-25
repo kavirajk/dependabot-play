@@ -16,11 +16,11 @@ jobs:
           echo "build_image=$build_image" >> "$GITHUB_OUTPUT"
     outputs:
       build_image: ${{ steps.build_image_step.outputs.build_image }}
-  
+
   goversion:
     runs-on: ubuntu-latest
     needs: prepare
-    container: 
+    container:
       image: ${{ needs.prepare.outputs.build_image }}
     steps:
       - name: Get Go Version
@@ -33,7 +33,7 @@ jobs:
 
   compare-manifests:
     runs-on: ubuntu-latest
-    needs: 
+    needs:
       - prepare
       - goversion
     steps:
@@ -46,5 +46,5 @@ jobs:
         echo "xxxxxxxxxxxxxxxxxx $version"
         go mod download
         go mod vendor
-      env: 
+      env:
         version: ${{ needs.goversion.outputs.version }}
