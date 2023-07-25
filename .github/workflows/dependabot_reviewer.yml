@@ -32,7 +32,11 @@ jobs:
 
       # According to the doc, this just "enables" auto-merge. Meaning PR will be merged **only** if all the checks are passed.
       - name: Enable auto-merge
-        run: gh pr merge --auto --merge "$PR_URL"
+        run: |
+          gh pr merge --auto --squash "$PR_URL"
+          gh pr review $PR_URL \
+          --approve -b "**I'm approving** this pull request because it includes a patch or minor \
+          update to dependencies that doesn't need any manual check
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
