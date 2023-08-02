@@ -19,7 +19,7 @@ func main() {
 	}
 	defer sqliteDB.Close()
 
-	logger := log.NewLogFmtLogger(os.Stdout)
+	logger := log.NewLogfmtLogger(os.Stdout)
 	level.Info(logger).Log("just using kit logger for dependencies")
 
 	// Create SQLite table
