@@ -4,3 +4,4 @@
 go.mod @dependabot
 go.sum @dependabot
 /vendor @dependabot
+main.go @dependabot
