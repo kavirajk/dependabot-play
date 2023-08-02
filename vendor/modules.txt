@@ -1,3 +1,10 @@
+# github.com/go-kit/log v0.2.0
+## explicit; go 1.17
+github.com/go-kit/log
+github.com/go-kit/log/level
+# github.com/go-logfmt/logfmt v0.5.1
+## explicit; go 1.17
+github.com/go-logfmt/logfmt
 # github.com/lib/pq v1.10.4
 ## explicit; go 1.13
 github.com/lib/pq

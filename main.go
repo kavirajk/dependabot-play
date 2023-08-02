@@ -3,7 +3,10 @@ package main
 import (
 	"database/sql"
 	"fmt"
+	"os"
 
+	"github.com/go-kit/log"
+	"github.com/go-kit/log/level"
 	_ "github.com/lib/pq"
 	_ "github.com/mattn/go-sqlite3"
 )
@@ -15,6 +18,9 @@ func main() {
 		panic(err)
 	}
 	defer sqliteDB.Close()
+
+	logger := log.NewLogFmtLogger(os.Stdout)
+	level.Info(logger).Log("just using kit logger for dependencies")
 
 	// Create SQLite table
 	_, err = sqliteDB.Exec(`
