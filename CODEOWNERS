@@ -1,2 +1,6 @@
 # Default code owner.
 * @kavirajk
+
+go.mod @dependabot
+go.sum @dependabot
+/vendor @dependabot
