@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/go-kit/log v0.2.0
 	github.com/lib/pq v1.10.9
-	github.com/mattn/go-sqlite3 v1.14.14
+	github.com/mattn/go-sqlite3 v1.14.17
 )
 
 require github.com/go-logfmt/logfmt v0.5.1 // indirect
