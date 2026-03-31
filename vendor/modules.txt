@@ -17,6 +17,6 @@ github.com/lib/pq/internal/proto
 github.com/lib/pq/oid
 github.com/lib/pq/pqerror
 github.com/lib/pq/scram
-# github.com/mattn/go-sqlite3 v1.14.37
+# github.com/mattn/go-sqlite3 v1.14.38
 ## explicit; go 1.19
 github.com/mattn/go-sqlite3
